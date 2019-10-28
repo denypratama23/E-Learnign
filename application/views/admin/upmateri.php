@@ -3,36 +3,29 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800">Upload Materi</h1>
-    <form>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Judul</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Judul Materi">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Jenjang</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>SD</option>
-                <option>SMP</option>
-                <option>SMA</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Mata Pelajaran</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>Matematika</option>
-                <option>Ilmu Pengetahuan Alam</option>
-                <option>Bahasa Indonesia</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlFile1">Upload Materi</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-        </div><br>
-        <button type="submit" class="btn btn-primary btn-user ">
-            Simpan
-        </button>
-    </form>
+    <?php echo form_open_multipart('admin/materi') ?>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Judul</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="nama" placeholder="Judul Materi">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Deskripsi Singkat</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="keterangan" placeholder="Berisi penjelasan singkat mengenai materi yang diupload ">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Mapel</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="mapel" placeholder="Matematika - IPA - B Indonesia">
+    </div>
+    <div class="form-group">
 
+        <label for="varchar">Upload file<?php echo $error ?></label><br>
+        <input type="file" name="filename"><br><br>
+
+    </div>
+    <button type="submit" class="btn btn-primary btn-user ">
+        Submit
+    </button>
+    <?php echo form_close() ?>
 
 </div>
 <!-- /.container-fluid -->

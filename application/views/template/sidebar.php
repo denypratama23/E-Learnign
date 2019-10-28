@@ -4,7 +4,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
           <div class="sidebar-brand-icon rotate-n-15">
-              <i class="fas fa-code"></i>
+              <i class="fas fa-graduation-cap"></i>
           </div>
           <div class="sidebar-brand-text mx-3">Learn </div>
       </a>
@@ -28,7 +28,7 @@
       </div>
       <li class="nav-item">
           <a class="nav-link" href="<?= base_url('admin') ?>">
-              <i class="fas fa-fw fa-chart-area"></i>
+              <i class="fas fa-users"></i>
               <span>Profile Pengguna</span></a>
       </li>
       <!-- Divider -->
@@ -36,22 +36,28 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('admin/upload') ?>">
-              <i class="fas fa-fw fa-chart-area"></i>
+          <a class="nav-link dropdown-toggle" href="<?= base_url('admin/upload_sd') ?>" id="dropdownMenuLink" data-toggle="dropdown">
+              <i class="far fa-file-video"></i>
               <span>Upload Vidio</span></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="<?= base_url('admin/upload_sd') ?>">SD</a>
+              <a class="dropdown-item" href="#">SMP</a>
+              <a class="dropdown-item" href="#">SMA</a>
+          </div>
+
       </li>
       <hr class="sidebar-divider">
       <!-- Nav Item - Tables -->
       <li class="nav-item">
           <a class="nav-link" href="<?= base_url('admin/upmateri') ?>">
-              <i class="fas fa-fw fa-table"></i>
+              <i class="fas fa-book-reader"></i>
               <span>Upload Materi</span></a>
       </li>
       <hr class="sidebar-divider">
 
       <li class="nav-item">
           <a class="nav-link" href="<?= base_url('admin/upsoal') ?>">
-              <i class="fas fa-fw fa-table"></i>
+              <i class="fas fa-tasks"></i>
               <span>Buat Soal</span></a>
       </li>
       <hr class="sidebar-divider">
