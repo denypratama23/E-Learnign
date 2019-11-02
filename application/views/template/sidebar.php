@@ -41,17 +41,22 @@
               <span>Upload Vidio</span></a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="<?= base_url('admin/upload_sd') ?>">SD</a>
-              <a class="dropdown-item" href="#">SMP</a>
-              <a class="dropdown-item" href="#">SMA</a>
+              <a class="dropdown-item" href="<?= base_url('admin/upload_smp') ?>">SMP</a>
+              <a class="dropdown-item" href="<?= base_url('admin/upload_sma') ?>">SMA</a>
           </div>
 
       </li>
       <hr class="sidebar-divider">
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('admin/upmateri') ?>">
+          <a class="nav-link dropdown-toggle" href="<?= base_url('admin/upmateri') ?>" id="dropdownMenuLinkmat" data-toggle="dropdown">
               <i class="fas fa-book-reader"></i>
               <span>Upload Materi</span></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkmat">
+              <a class="dropdown-item" href="<?= base_url('admin/upmateri') ?>">SD</a>
+              <a class="dropdown-item" href="<?= base_url('admin/upmateri_smp') ?>">SMP</a>
+              <a class="dropdown-item" href="<?= base_url('admin/upmateri_sma') ?>">SMA</a>
+          </div>
       </li>
       <hr class="sidebar-divider">
 
